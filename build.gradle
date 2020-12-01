@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    // JUnit
+    testImplementation('org.junit.jupiter:junit-jupiter:5.5.2')
+
+    // dynamodb
+    implementation("com.amazonaws:aws-java-sdk-dynamodb:1.11.563")
+
+    // lombok
+    implementation("org.projectlombok:lombok:1.18.12")
+    annotationProcessor("org.projectlombok:lombok:1.18.12")
+}
+
+// use JUnit 5 platform
+test {
+    useJUnitPlatform()
+}
