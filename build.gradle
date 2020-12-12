@@ -20,6 +20,9 @@ dependencies {
     // lombok
     implementation("org.projectlombok:lombok:1.18.12")
     annotationProcessor("org.projectlombok:lombok:1.18.12")
+
+    // GSON
+    testImplementation('com.google.code.gson:gson:2.8.6')
 }
 
 // use JUnit 5 platform
