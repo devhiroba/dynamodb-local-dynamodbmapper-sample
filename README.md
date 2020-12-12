@@ -14,3 +14,4 @@
 - lombok
 - GSON
 - IntelliJ
+- docker-compose
